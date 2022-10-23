@@ -1,5 +1,5 @@
 /*
-    Code to print Twelve days to christ carol song to console
+    Code to print Twelve days to christmas carol song to console
     Author: James Faith Shameh
 */
 
@@ -24,6 +24,10 @@ fn main() {
         "(All their good wishes)",
     ];
 
+    print_song_verses(&mut lyrics, &days);
+}
+
+fn print_song_verses(lyrics: &mut [&str], days: &[&str]) {
     // loop through each day in the twelve days
     for (i, day) in days.iter().enumerate() {
         println!(
